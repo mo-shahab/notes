@@ -25,10 +25,10 @@
 # Understanding the problem constraints and keeping track of the two pointers (`right` and `left`) 
 # during the sorting process is crucial in this approach.
 class Solution:
-    def sort012(self,arr,n):
+    def sort012(self, arr, n):
         right = 0
         i = 0
-        left = n-1
+        left = n - 1
         while i <= left:
             if arr[i] == 0:
                 temp = arr[i]
@@ -40,7 +40,6 @@ class Solution:
                 temp = arr[left]
                 arr[left] = arr[i]
                 arr[i] = temp
-                i += 1
                 left -= 1
             else:
                 i += 1
