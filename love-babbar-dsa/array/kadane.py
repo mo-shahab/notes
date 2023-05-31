@@ -1,4 +1,5 @@
 # kadane's algo basically
+# finding the max contiguous sum in a subarray
 
 # Here's the step-by-step approach of Kadane's algorithm:
 
