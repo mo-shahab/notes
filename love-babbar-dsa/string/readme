@@ -1,0 +1,15 @@
+Security: Strings are often used to store sensitive information, such as
+passwords, usernames, connection URLs, etc. If Strings were mutable, then
+hackers could modify them and compromise the security of the application.
+Caching: Strings are cached in a special memory region called the String pool,
+which allows reusing the same String object for different variables. This
+saves memory and improves performance. If Strings were mutable, then the
+String pool would not work, as modifying one String would affect all the
+others that share the same reference.
+Synchronization: Strings are thread-safe, meaning that they can be safely
+shared and accessed by multiple threads without causing concurrency issues. If
+Strings were mutable, then synchronization would be required to avoid data
+inconsistency and race conditions.
+Class loading: Strings are used by the JVM to load classes and resolve
+dependencies. If Strings were mutable, then the class loading mechanism would
+be unreliable, as the class names could be changed at runtime.
