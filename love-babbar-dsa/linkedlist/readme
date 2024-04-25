@@ -1,0 +1,2 @@
+can we sort a linked list in less than O(n)?
+-> we cannot sort a linked list in less than big oh of n, this is in terms of both the recursive based methods and iterative based methods
